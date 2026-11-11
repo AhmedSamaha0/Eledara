@@ -38,7 +38,7 @@
       <ul class="navbar-nav mx-auto gap-lg-1 mt-3 mt-lg-0">
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#home">الرئيسية</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#features">المميزات</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#pricing">الأسعار</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#">الأسعار</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#download">التحميل</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#faq">الأسئلة الشائعة</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">تواصل معنا</a></li>
@@ -119,7 +119,52 @@
     </div>
   </div>
 </section>
+<!-- ================= SCREENSHOTS ================= -->
+<section class="section" id="screenshots">
+  <div class="container container-xl">
+    <div class="eyebrow-title reveal mx-auto text-center mb-5">
+      <h2 class="section-title">شاهد البرنامج من الداخل</h2>
+      <p class="section-sub">لقطات حقيقية من واجهة Eledara توضح سهولة الاستخدام.</p>
+    </div>
 
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <figure class="shot-card" data-full="images/screens/sales.jpg" data-title="شاشة المبيعات">
+          <img src="images/screens/sales.jpg" alt="شاشة المبيعات في Eledara" loading="lazy">
+          <figcaption>شاشة المبيعات</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <figure class="shot-card" data-full="images/screens/inventory.jpg" data-title="إدارة المخزون">
+          <img src="images/screens/inventory.jpg" alt="إدارة المخزون في Eledara" loading="lazy">
+          <figcaption>إدارة المخزون</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <figure class="shot-card" data-full="images/screens/reports.jpg" data-title="التقارير">
+          <img src="images/screens/reports.jpg" alt="التقارير في Eledara" loading="lazy">
+          <figcaption>التقارير</figcaption>
+        </figure>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Image popup -->
+<div class="modal fade" id="shotModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content shot-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="shotModalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <img id="shotModalImg" src="" alt="" class="img-fluid rounded-3 w-100">
+      </div>
+    </div>
+  </div>
+</div>
 <!-- ================= PRICING ================= -->
 <section class="section" id="pricing">
   <div class="container container-xl">
